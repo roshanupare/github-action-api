@@ -10,13 +10,13 @@ app.use(express.json());
 
 app.use("/home", (req,res) => {
     res.json({
-        msg:"Hi Im from express app-- after github ci cd pipeline"
+        msg:"Hi I am Roshan"
     })
 })
 
 //routes middleware
 app.use("/users",require("./routes/user"));
-app.use("/send",require("./routes/sendEmail"));
+app.use("/send",require("./routes/sendEmail")); 
 
 //Catching 404 Error
 app.use((req, res, next) => {
