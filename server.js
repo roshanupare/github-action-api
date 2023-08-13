@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/home", (req,res) => {
+app.use("/roshan", (req,res) => {
     res.json({
         msg:"Hi I am Roshan"
     })
